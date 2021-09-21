@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libuntitled12.a CMakeFiles/untitled12.dir/library.c.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libuntitled12.a
