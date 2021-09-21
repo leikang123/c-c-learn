@@ -1,0 +1,16 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/THU/CLion_R code/untitled13/library.c
+library.h
+/Volumes/THU/CLion_R code/untitled13/library.h
+stdio.h
+-
+
+/Volumes/THU/CLion_R code/untitled13/library.h
+
