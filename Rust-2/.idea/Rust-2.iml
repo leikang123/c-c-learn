@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module type="CPP_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <content url="file://$MODULE_DIR$">
+      <sourceFolder url="file://$MODULE_DIR$/day18-2/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day18-3/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day18-4/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day18-5/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day18-6/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day18-7/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day18-8/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/day18/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <excludeFolder url="file://$MODULE_DIR$/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day18/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day18-2/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day18-3/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day18-4/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day18-5/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day18-6/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day18-7/target" />
+      <excludeFolder url="file://$MODULE_DIR$/day18-8/target" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+  </component>
+</module>
