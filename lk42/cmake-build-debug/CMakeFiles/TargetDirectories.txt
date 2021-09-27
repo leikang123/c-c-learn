@@ -1,0 +1,3 @@
+/Volumes/THU/lk42/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Volumes/THU/lk42/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Volumes/THU/lk42/cmake-build-debug/CMakeFiles/lk42.dir
