@@ -1,0 +1,18 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Volumes/THU/CLion_R code/demo_C++/demo2.cpp
+demo2.h
+/Volumes/THU/CLion_R code/demo_C++/demo2.h
+iostream
+-
+limits
+-
+
+/Volumes/THU/CLion_R code/demo_C++/demo2.h
+
