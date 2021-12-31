@@ -7,3 +7,6 @@ int main() {
     cout << "Hello, World!" << endl;
     return 0;
 }
+void func1(int a =12,int b,int c=2){
+
+}
