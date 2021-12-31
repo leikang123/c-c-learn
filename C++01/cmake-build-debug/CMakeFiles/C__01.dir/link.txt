@@ -1,0 +1,2 @@
+/Library/Developer/CommandLineTools/usr/bin/ar qc libC__01.a CMakeFiles/C__01.dir/library.cpp.o
+/Library/Developer/CommandLineTools/usr/bin/ranlib libC__01.a
