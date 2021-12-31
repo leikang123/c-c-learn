@@ -1,3 +1,0 @@
-/Volumes/THU/CLion_R code/lk49/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-/Volumes/THU/CLion_R code/lk49/cmake-build-debug/CMakeFiles/edit_cache.dir
-/Volumes/THU/CLion_R code/lk49/cmake-build-debug/CMakeFiles/lk49.dir
