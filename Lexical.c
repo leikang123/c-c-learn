@@ -3,7 +3,7 @@
 # include <string.h>
 #include <ctype.h>
 #include <iostream>
-#include <tstream>
+#include <fstream>
 using namespace std;
  struct symbol
  {
