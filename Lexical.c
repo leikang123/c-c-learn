@@ -213,11 +213,351 @@ void LexiscalAnalyzer()
            case '7':
            case '8':
            case '9':
+           while(isdisit(ch))
+           {
+               concat();
+               getNextChar(fp);
+
+           }
+           retract(fp);
+           printf("(%d ,%s)\n",80,strToken);
+           break;
+           case '{' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case '}' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case '[' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case ']' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case '(' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case ')' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case '.' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case '-' :
+           concat();
+           getNextChar(fp);
+           if(ch =='>')
+           {
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           // break;
+           }else if(ch == '-')
+           {
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+          // break;
+           }else if (ch == '=')
+           {
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '_' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case '+' :
+           concat();
+           getNextChar(fp);
+           if(ch =='+')
+           {
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           }else if (ch =='==')
+           {
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           }else 
+           {
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("%d ,%s)\n",strToken);
+           }
+           break;
+           case '*' :
+           concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+               concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }else{
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '&':
+           concat();
+           getNextChar(fp);
+           if(ch == '=')
+           {
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           }else if(ch =='&')
+           {
+               concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }else 
+           {
+                retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '!' :
+           concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+               concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }else 
+           {
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '%' :
+           concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+                concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }else 
+           {
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '<' :
+           concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+                concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }else if(ch == '<')
+           { 
+               concat();
+               code =reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+
+           }else 
+           {
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '>' :
+           concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+                concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }else if(ch == '>')
+           { 
+               concat();
+               code =reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+
+           }else 
+           {
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '=' :
+
+           concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+                concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+
+           }else 
+           {
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+        case '^' :
+        concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+                concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+          }else 
+           {
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '!' :
+           concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+                concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+             }else if(ch == '!')
+           { 
+               concat();
+               code =reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+
+           }else 
+           {
+               retract(fp);
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }
+           break;
+           case '?' :
+           concat();
+           code = reserve_operator(strToken);
+           printf("(%d ,%s)\n",code,strToken);
+           break;
+           case '/' :
+           concat();
+           getNextChar(fp);
+           if(ch =='=')
+           {
+                concat();
+               code = reserve_operator(strToken);
+               printf("(%d ,%s)\n",code,strToken);
+           }else if(ch == '/')
+           { 
+               getNextChar(fp);
+               while(ch !='\n')
+               {
+                   getNextChar(fp);
+               }
+               break;
+           }else if(ch =='*')
+           {
+               getNextChar(fp);
+               while (ch!=='*')
+               {
+                   getNextChar(fp);
+               }
+               getNextChar(fp);
+               if(ch == '/');
+               break;
+               
+           }else{
+               concat();
+               code = reserve_operator(strToken);
+               printf("%d ,%s)\n",code,strToken);
+           }
+           break;
+           case ',' :
+               concat();
+               code = reserve_operator(strToken);
+               printf("%d ,%s)\n",code,strToken);
+               break;
+
+            case '#' :
+            concat();
+               code = reserve_operator(strToken);
+               printf("%d ,%s)\n",code,strToken);
+               break;
+            case ':' :
+            concat();
+               code = reserve_operator(strToken);
+               printf("%d ,%s)\n",code,strToken);
+               break;
+               case ';' :
+               concat();
+               code = reserve_operator(strToken);
+               printf("%d ,%s)\n",code,strToken);
+               break;
+               default:
+               if(ch ==EOF)
+               {
+                   eof_flag =1;
+                   break;
+               }
+               error();
+  }
+  }
+   int main()
+   {
+       initialization();
+       char name[1024];
+       cout << "file is read :";
+       cin >> name;
+       fp = fopen(name,"r");
+       out.open("result.txt");
+       while(!feof(fp))
+       {
+           if(eof_flag == 1)
+           {
+               exit(1);
+           }
+           LexiscalAnalyzer();
+       }
+       fclose(fp);
+       out.close();
+       return 0;
+   }
+
            
+
+
 
         
 
 
 
-    }
-}
+    
