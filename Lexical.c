@@ -5,20 +5,25 @@
 #include <iostream>
 #include <fstream>
 using namespace std;
+// 结构体符号
  struct symbol
- {
+ {   
+     // 定义指针变量str;
      char * str;
+     // 定义变量coding
      int coding;
 
  };
+ // 字符指针以及编码列表34个
  char *keyword_list[34] = {"void","char","int","float","double","short","long","singed"
                            ,"unsinged","struct","union","enum","typedef","sizeof","auto","goto",
                            "if","else","switch","case","default","for","do","while","scanf","printf",
                            "static","register","extern","const","voliate","return","continue","break"};
   char *operator_list[44] = {"{","}",".",",","[","]","(",")","*","&","%","$","#","@","|"
                              ,"\",">","<",">>","<<","<=",">=","+","-","!=","^",":",";","'","/","~","`","&&","||","&="};
-// 读入的字符
+// 读入的字符，ch字符变量，存放最新读入的源程序字符
 char ch;  
+// strToken 字符数组，存放构成单词符号的字符串
 char strToken[20] = "";
 int eof_flag = 0;
 int num = 1;
@@ -32,19 +37,24 @@ ofstream out;
 // 给单词符号设定种别编码
 void initialization()
 {
+
+    // 关键字设定种别编码
     for (int i=0;i<34;i++)
     {
-        keywords[i].str = ketword_list[i];
+        keywords[i].str = keyword_list[i];
         keywords[i].coding = num;
         num++;
     }
+    // 给算符和界符设定种别编码
     for(i=0;i<44;i++)
     {
         identifiers[i].str = operator_list[i];
         identifiers[i].coding = num;
         num++;
     }
-}    
+    // 数字79，标志符号80
+}  
+// 子程序过程，把下一个字符读入ch中  
 void getNextChar(FILE *ffp)
 {
     if(ch = get (ffp)) == EOF)
@@ -57,6 +67,7 @@ void getNextChar(FILE *ffp)
     }
 
 }
+// 子程序过程，每次调用时，检查ch的字符串是否为空白字符，回车或者制表符号，惹是反复调用getNextChar(),直到ch中读入非上述符号
 void getbc(FILE *ffp)
 {
     while (ch == ' ' ||  ch == '\n' || ch =='\t')
@@ -74,6 +85,7 @@ bool isDigit(char ch)
 {
     return isdigit(ch);
 }
+// 布尔函数，判断是否为下划线
 bool isUnderline(char ch)
 {
     if(ch == '_')
@@ -81,6 +93,7 @@ bool isUnderline(char ch)
     else 
     return 0;
 }
+// 子程序过程，把ch中的字符链接到strToken
 void concat()
 {
     char *tmp = &ch;
@@ -93,6 +106,7 @@ void retract(FILE *ffp)
     fseek(ffp,-1,SEEK_CUR);
     ch ='  ';
 }
+// 整型函数，对于strToken中字符串判断它是否为保留字，如果是保留字给出编码，否则返回零。
 int reserve_string(char * str)
 {
     for(int i=0;i34;i++)
@@ -116,6 +130,7 @@ int reserve_operator(char *ch)
     }
     return 0;
 }
+// 出现非法字符，显示错误信息
 void error()
 {
     printf("\n ***********************error********\n");
