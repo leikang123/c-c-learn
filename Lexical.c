@@ -2,7 +2,7 @@
 # include <stdlib.h>
 # include <string.h>
 #include <ctype.h>
-#include "iostream.h"
+#include <iostream>
 #include <fstream>
 using namespace std;
 // 结构体符号
