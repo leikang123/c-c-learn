@@ -562,8 +562,10 @@ void LexiscalAnalyzer()
            }
            LexiscalAnalyzer();
        }
+       // 关闭fp
        fclose(fp);
        out.close();
+       // 返回0
        return 0;
    }
 
