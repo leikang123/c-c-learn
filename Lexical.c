@@ -1,6 +1,6 @@
 #include <stdio.h>
-# include <stdlib.h>
-# include <string.h>
+#include <stdlib.h>
+#include <string.h>
 #include <ctype.h>
 #include <iostream>
 #include <fstream>
@@ -442,6 +442,7 @@ void LexiscalAnalyzer()
                printf("(%d ,%s)\n",code,strToken);
            }
            break;
+           //输入的符号异或
         case '^' :
         concat();
            getNextChar(fp);
