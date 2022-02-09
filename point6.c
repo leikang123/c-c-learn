@@ -13,9 +13,8 @@ int main()
     int i =0;
     for(i=0;i<5;i++,p3++)
     {
-        //printf("%s\n",*p3);
-        printf("%s\n",(*p3+i));
-        //p3++;
+        printf("%s\n",*p3);
+        //printf("%s\n",(*p3+i));
     } 
     
 }
