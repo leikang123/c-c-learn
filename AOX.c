@@ -72,24 +72,24 @@ int main()
        }
        switch(select)
        {
-           case 1:count=Add(gz.count);      /*增加职工工资记录*/
+           case 1:count=Add(gz,count);      /*增加职工工资记录*/
            break;                           
-           case 2:count=Del(gz.count);      /*删除职工工资记录*/
+           case 2:count=Del(gz,count);      /*删除职工工资记录*/
            break;
-           case 3:Qur(gz.count);            /*查询职工工工资记录*/
+           case 3:Qur(gz,count);            /*查询职工工工资记录*/
            break;
-           case 4:Modify(gz.count);         /*修改职工工资记录*/
+           case 4:Modify(gz,count);         /*修改职工工资记录*/
            break;
-           case 5:count=Insert(gz.count);   /*插入职工工资记录*/
+           case 5:count=Insert(gz,count);   /*插入职工工资记录*/
            break;
-           case 6:Tongji(gz.count);         /*统计职工工资记录*/
+           case 6:Tongji(gz,count);         /*统计职工工资记录*/
            break;
-           case 7:Sort(gz.count);           /*排序职工工资记录*/
+           case 7:Sort(gz,count);           /*排序职工工资记录*/
            break;
-           case 8:Save(gz.count);           /*保存职工工资记录*/
+           case 8:Save(gz,count);           /*保存职工工资记录*/
            break;
            case 9:system("cls");            /*显示职工工资记录*/
-                  Disp(gz.count);
+                  Disp(gz,count);
            break;
            default:Wrong();                 /*按键盘的数据数值为0-9*/
            getchar();
