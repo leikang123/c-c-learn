@@ -1,6 +1,6 @@
-﻿#include <iostream>
-using namespace std;
-int main() {
+﻿#include <iostream>     //头文件
+using namespace std;    //使用命名空间
+int main() {            //互相引用
    int a = 10;
    int &b = a;
    int &c = b;
