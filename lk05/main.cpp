@@ -7,7 +7,4 @@ int main() {
     const int *b = &y;
     cout << a << endl;
     cout << b << endl;
-
-
-
 }

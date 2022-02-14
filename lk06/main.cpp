@@ -1,10 +1,10 @@
-﻿#include <iostream>
-#include <algorithm>
+﻿#include <iostream>     //声明头文件
+#include <algorithm>    //声明算法标准库文件
 using namespace std;
 int main() {
-    double a[]={1.1,2.2,3.3,4.4,5.5};
-    int b[4];
-    copy(a,a+4, ostream_iterator<double>(cout," "));
+    double a[]={1.1,2.2,3.3,4.4,5.5};       //定义数组double型
+    int b[4];                               //定义数组
+    copy(a,a+4, ostream_iterator<double>(cout," "));    //调用算法库文件
     cout <<endl;
     reverse_copy(a,a+4, ostream_iterator<double>(cout," "));
     cout << endl;
