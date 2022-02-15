@@ -7,7 +7,6 @@ int main()
     char s2[] = "zhongguoren";
     gets(s2);                       //函数输入的字符串
     puts(s2);
-    char &a = s;
-    cout <<"a=" << a << endl;
+
 
 }
