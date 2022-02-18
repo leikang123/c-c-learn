@@ -1,3 +1,9 @@
+/*主要是用C语言编写的一种词法分析器，参考CB编译器的词法
+，词法分析在关键字中的token的分析。
+2020-1-12 @雷康
+*/
+
+// 头文件
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
