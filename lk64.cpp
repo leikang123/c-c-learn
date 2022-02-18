@@ -1,7 +1,7 @@
 #include<iostream>
 #include<curses.h>
-#include <dos.h> 
-#include <windows.h>
+#include "dos.h"
+#include "windows.h"
 #include <time.h>
 
 #define SCREEN_WIDTH 90
