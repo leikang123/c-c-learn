@@ -14,9 +14,9 @@ using namespace std;
 // 结构体符号
  struct symbol
  {   
-     // 定义指针变量str;
+     // 定义字符指针变量str;
      char * str;
-     // 定义变量coding
+     // 定义int变量coding
      int coding;
 
  };
