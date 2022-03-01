@@ -38,7 +38,7 @@ struct symbol = keywords[34];
 struct symbol =   identifiers[44];
 FILE *fp = NULL;
 FILE *fw = NULL;
-ofstream out;
+ofstream out;  //关闭输出
 
 // 给单词符号设定种别编码
 void initialization()
@@ -47,7 +47,7 @@ void initialization()
     // 关键字设定种别编码
     for (int i=0;i<34;i++)
     {
-        keywords[i].str = keyword_list[i];
+        keywords[i].str = keyword_list[i]; // 字符列表的遍历复制给单词指向指针
         keywords[i].coding = num;
         num++;
     }
